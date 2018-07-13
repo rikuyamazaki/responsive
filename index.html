@@ -2,12 +2,12 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>My Japanese Name</title>
         <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/flexslider.css">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/stylesheet2.css" type="text/css">
         
         <script src="https://code.jquery.com/jquery-3.0.0.min.js">
         </script>
@@ -40,8 +40,8 @@
     <body>
         <header>
             <div class="select">
-                <img src="image/JP.jpg">
-                <img src="image/EN.jpg">
+                <a href="index.html" class="ja"><img src="image/JP.jpg"></a>
+                <a href="english.html" class="en"><img src="image/EN.jpg"></a>
             </div>
             
             <div class="header-logo">
@@ -108,8 +108,8 @@
             </div>
             
             <div class="flexslider-controls">
-                <ul class="thumb">
-                    <li>４つのフォント</li>
+                <ul class="thumb clearfix">
+                    <li class="four-font">４つのフォント</li>
                     <li>充実のデザイン</li>
                     <li class="many-item">豊富なアイテム</li>
                 </ul>
@@ -155,7 +155,7 @@
 
                         <p><small>※ご注文完了後、マイページ内に「発送予定日」が表示されますが、ご注文状況や、</small></p><p><small>&emsp;天候・交通事情によりお届けまでに時間をいただく場合がございます。</small></p>
                     
-                        <p><small>※商品発送後、Emailにてインボイス(INVOICE)を送りいたします。</small></p><p><small>&emsp;商品の配送伝票番号が記載されておりますので詳しくは、<a>日本郵便HP</a>にてご確認ください。</small></p>
+                        <p><small>※商品発送後、Emailにてインボイス(INVOICE)を送りいたします。</small></p><p><small>&emsp;商品の配送伝票番号が記載されておりますので詳しくは、<a href="https://www.post.japanpost.jp">日本郵便HP</a>にてご確認ください。</small></p>
                     </div>
                         
                     <li class="pay">お支払い</li>
