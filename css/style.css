@@ -46,6 +46,11 @@
 .center-title:after {
     margin-left: 20px;
 }
+
+.flex-control-paging li a{
+    width: 11px;
+    height: 11px;
+}
 /****************************************************
 ***************  header  ***************************/
 .header {
@@ -63,7 +68,7 @@
 }
 
 .lang a:hover {
-    border-bottom: 1px solid #fc1a07;
+    opacity: 0.7;
 }
 
 .logo {
@@ -629,7 +634,18 @@ footer .qa {
 ******************************************************/
 
 
-.flex-control-paging li a{
-    width: 11px;
-    height: 11px;
+
+
+/****************************************************
+*******************  retrun  ***********************/
+
+.scroll-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
+
+
+/******************** retrunここまで  ******************
+******************************************************/
