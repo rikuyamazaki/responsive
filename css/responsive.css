@@ -1,0 +1,281 @@
+@media (max-width: 599px) {
+    
+    .center-title {
+        width: 100%;
+    }
+    
+    .lang {
+        float: right;
+        width: 30%;
+        text-align: center;
+    }
+    
+    .lang img {
+        width: 35%;
+        vertical-align: middle;
+        margin-top: 70px;
+    }
+    
+    .logo {
+        width: 70%;
+        text-align: right;
+        padding-bottom: 0;
+    }
+    
+    .logo img {
+        width: 70%;
+        margin-top: 70px;
+    }
+    
+    .top-wrapper .flexslider {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .top-wrapper .side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        margin: 0;
+        width: 100%;
+        background-image: repeating-linear-gradient(-45deg, red , red 10px,  white 10px, white 20px, #ccf5ff 20px, #ccf5ff 30px, white 30px, white 40px);
+        background-size: 60px 5px;
+        background-position: bottom;
+        background-repeat: repeat-x;
+    }
+    
+    .side .tsuku {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .side .tsuku img {
+        width: 40px;
+    }
+    
+    .side .tsuku p {
+        padding-left: 8px;
+        color: #fc1a07;
+    }
+    
+    .side .miru p {
+        padding-left: 8px;
+        color: #fc1a07;
+    }
+    
+    
+    .side .miru img {
+        width: 40px;
+    }
+    
+    .side .miru {
+        display: inline-block;
+    }
+    
+    .top-wrapper .side .facebook {
+        display: inline-block;
+        width: 35px;
+        margin-bottom: 8px;
+    }
+    
+    .top-wrapper .side .twitter {
+        display: inline-block;
+        width: 38px;
+        margin-bottom: 12px;
+    }
+    
+    .top-wrapper .side .insta {
+        display: inline-block;
+        width: 35px;
+        margin-bottom: 8px;
+        margin-left: 3px;
+    }
+    
+    
+    
+    .top-wrapper .side .paso {
+        display: none;
+    }
+    
+    .top-wrapper .side .sp {
+        display: block;
+    }
+    
+    .about .my {
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+    
+    .about p {
+        font-size: 13px;
+    }
+    
+    .about .tom {
+        margin-top: 30px;
+    }
+    
+    .about .tom1 img {
+        width: 80%;
+    }
+    
+    .about .tom2 img {
+        width: 80%;
+    }
+    
+    .about .change {
+        width: 100%
+    }
+    
+    .about .change input[type="text"] {
+        width: 60%
+    }
+    
+    .about .change input[type="button"] {
+        width: 20%
+    }
+    
+    .steps .design {
+        margin-top: -20px;
+    }
+    
+    .steps .pc {
+        display: none;
+    }
+    
+    .steps .design {
+        width: 100%;
+    }
+    
+    .steps .design h2 {
+        font-size: 25px;
+    }
+    
+    .steps .flexslider-controls {
+        width: 100%;
+    }
+    
+    .steps .flexslider2 .slides img {
+        width: 139%;
+    }
+    
+    .steps .flexslider2 .slides .slider-p {
+    color: #000;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    }
+    
+    .steps .flexslider-controls {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .steps .flexslider-controls .flex-active {
+    width: calc(100% / 3);
+    background: #fff;
+    color: #fc1a07;
+    border-bottom: 2px solid #fc1a07;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+    
+    
+    .popup .kome {
+        margin-bottom: 10px;
+    }
+    
+    .popup .open1 {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+    }
+    
+    .popup .open-text {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .popup .open-text img {
+        width: 100%;
+    }
+    
+    .popup .item img {
+        width: 70%;
+    }
+    
+    .service .service-list {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .service .send, .pay, .price {
+        margin-left: 10px;
+    }
+    
+    .service .send-conf {
+        margin: 0;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+    
+    .service .send-p {
+        margin-top: -10px;
+    }
+    
+    .service .pay-message {
+        margin-top: -25px;
+    }
+    
+    .service .tax-free {
+        width: 40%;
+        margin-top: 5px;
+    }
+    
+    .service .price-message {
+        margin-top: -25px;
+    }
+    
+    .service .price-p {
+        margin-top: -15px;
+    }
+    
+    footer .seraku img {
+        width: 50%;
+    }
+    
+    footer .tokyo-emblem img {
+        width: 40%;
+    }
+    
+    footer .contact, footer .qa {
+        display: inline-block;
+        padding-bottom: 80px;
+    }
+    
+    footer .contact a {
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid #c3c0c0;
+    }
+    
+    footer .qa a {
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid #c3c0c0;
+     
+    }
+    
+    footer .contact a:hover {
+        color: blue;
+        border-bottom-color: blue;
+    }
+    
+     footer .qa a:hover {
+        color: blue;
+        border-bottom-color: blue;
+    }
+}

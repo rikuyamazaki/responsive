@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fc1a07;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.center-thumbtitle {
+    text-align: center;
+    font-size: 12px;
+    color: #d8d800;
+    font-weight: bold;
+    margin-bottom: 40px;
+    
+}
+
+.center-title:before,.center-title:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #fc1a07;
+    display: block;
+}
+
+.center-title:before {
+    margin-right: 20px;
+}
+
+.center-title:after {
+    margin-left: 20px;
+}
+/****************************************************
+***************  header  ***************************/
+.header {
+    width: 100%;
+}
+
+.lang {
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.lang img {
+    width: 8%;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 35%;
+}
+
+
+
+/************** headerここまで  ************************
+******************************************************/
+
+
+
+
+/****************************************************
+***************  top-wrapper  **********************/
+.top-wrapper {
+    text-align: center;
+}
+
+.top-wrapper .flexslider {
+    display: inline-block;
+    width: 70%;
+    position: relative;
+}
+
+.top-wrapper .flexslider input[type="button"] {
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+    z-index: 2;
+    width: 40%;
+    height: 15%;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fc1a07;
+    border-radius: 5px;
+    border: 1px solid #fc1a07;
+    background: #fff;
+}
+
+.top-wrapper .flexslider input[type="button"]:hover {
+    cursor: pointer;
+}
+
+.top-wrapper .flexslider img {
+    width: 100%;
+    text-align: right;
+}
+
+.top-wrapper .side {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.top-wrapper .side p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.top-wrapper .side .sp {
+    display: none;
+}
+
+.top-wrapper .side img {
+    width: 60%;
+}
+
+.top-wrapper .side img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.top-wrapper .side p {
+    padding-bottom: 10px;
+}
+
+.top-wrapper .side .facebook {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.top-wrapper .side .twitter {
+    margin-top: 10px;
+}
+
+.top-wrapper .side .insta {
+    margin-top: 10px;
+}
+
+
+
+/************** top-wrapperここまで  *******************
+******************************************************/
+
+
+
+
+/****************************************************
+***************  about  ****************************/
+
+.about {
+    text-align: center;
+}
+
+
+.about img {
+    width: 50%;
+}
+
+.about p {
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.about .tom {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.about .tom1 {
+    display: inline-block;
+    width: 50%;
+}
+
+.about .tom2 {
+    display: inline-block;
+    width: 40%;
+    text-align: left
+}
+
+.about .about-p {
+    margin-top: 30px;
+}
+
+.about .change {
+    background: #d3e9ff;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about .change h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fc1a07;
+    padding-top: 10px;
+}
+
+.about .change p {
+    font-size: 20px;
+    color: #fc1a07;
+    padding-bottom: 10px;
+}
+
+.about .change input::-webkit-input-placeholder {
+    font-size: 30px;
+    opacity: 0.5;
+}
+.about .change input:-moz-placeholder {
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+.about input[type="text"] {
+    width: 35%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 0.7px solid #000;
+    vertical-align: middle;
+}
+
+
+.about .change input[type="button"] {
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0.7px solid #fc1a07;
+    background: #fc1a07;
+    color: #fff;
+    box-shadow: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.about  .change input[type="button"]:hover {
+    opacity: 0.7;
+}
+
+/******************** aboutここまで  *******************
+******************************************************/
+
+
+
+
+
+/****************************************************
+***************  steps  ****************************/
+
+.steps {
+    margin-top: 40px;
+    text-align: center;
+    color: #fc1a07;
+}
+
+.steps .pc {
+    display: inline-block;
+    margin-top: 40px;
+    width: 30%;
+}
+
+.steps .design {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 45px;
+   
+}
+
+.steps .pc img {
+    width: 75%;
+    margin-right: -40px;
+}
+
+.steps .design img {
+    width: 30%;
+    padding-right: 10px
+}
+
+.steps .design h2 {
+    background: #fc1a07;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.steps .design a {
+    text-decoration: none;
+}
+
+.steps .design h2:hover {
+    opacity: 0.7;
+}
+
+.steps .flexslider-controls {
+    width: 66%;
+    line-height: 46px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 2px solid #fc1a07;
+    border-radius: 10px;
+}
+
+.steps .flexslider-controls .thumb {
+    display: flex;
+}
+
+.steps .flexslider-controls li {
+    text-align: center;
+    width: calc(100% / 3);
+    width: -webkit- calc(100% / 3);
+    border-right: 2px solid #fc1a07;
+}
+
+.steps .flexslider-controls li:hover {
+    cursor: pointer;
+}
+
+
+.steps .flexslider-controls .four-font {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: calc(100% / 3);
+}
+
+
+.steps .flexslider-controls .many-item {
+    border-right: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.steps .flexslider2 {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.steps .flexslider2 .slides img {
+    width: 75%;
+}
+
+.steps .flexslider2 .slides .slider-p {
+    display: none;
+}
+
+.steps .flexslider-controls .flex-active {
+    background: #fc1a07;
+    color: #fff;
+    width: calc(100% / 3);
+}
+
+
+/******************** stepsここまで  *******************
+******************************************************/
+
+
+
+/****************************************************
+***************  open  *****************************/
+
+.popup {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popup .open1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    width: 20%;
+ 
+}
+
+.popup .open-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 60%;
+}
+
+.popup .open1 img {
+    width: 70%; 
+}
+
+.popup .open-text img {
+    width: 100%;
+}
+
+.popup .popup-p {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.popup .item {
+    margin: 20px 0 10px 0;
+}
+
+.popup .item img {
+    width: 30%;
+}
+
+.popup .item-p p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.popup .item-p h1 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+
+/******************** openここまで  ********************
+******************************************************/
+
+
+
+
+/****************************************************
+*******************  service  **********************/
+
+
+.service {
+    margin-bottom: 100px;
+}
+
+.service .service-list {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.service-list .aaa li:before {
+    content: '';
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: #000;
+	position: relative;
+	left: -1px;
+	top: -3px;
+}
+
+.service .send , .pay, .price {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    border-bottom: 1px solid #777777;
+    padding-left: 1px;
+}
+
+.service .send-message {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.service .send-conf {
+    margin-left: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.service .send-p {
+    font-size: 13px;
+}
+
+.service .pay-message {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.service .pay-message li:before{
+    content: '';
+	width: 4px;
+	height: 4px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #000;
+	position: relative;
+	left: -8px;
+	top: -3px
+}
+
+.service .tax-free {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 20%;
+}
+
+.service .price-conf {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.service .price-message {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.service .price-p {
+    font-size: 13px;
+}
+
+
+
+/******************** serviceここまで  *****************
+******************************************************/
+
+
+
+
+
+/****************************************************
+*******************  footer  ***********************/
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+footer .teikyou {
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+footer .teikyou h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+
+}
+
+footer .teikyou .seraku {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+}
+
+footer .seraku img {
+    width: 30%;
+}
+
+footer .kyousan {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+footer .kyousan h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer .kyousan .tokyo-emblem {
+    display: inline-block;
+    width: 50%;
+}
+
+footer .tokyo-emblem img {
+    width: 30%;
+}
+
+footer .kyousan img {
+    vertical-align: middle;
+    width: 30%;
+    padding-right: -30px;
+}
+
+footer .kyousan .tokyo {
+    margin-right: 10px;
+}
+
+footer .contact {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 40px;
+    display: none;
+}
+
+footer .qa {
+    display: inline-block;
+    margin-top: 40px;
+    display: none;
+}
+
+
+
+/******************** footerここまで  ******************
+******************************************************/
+
+
+.flex-control-paging li a{
+    width: 11px;
+    height: 11px;
+}
