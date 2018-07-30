@@ -62,6 +62,10 @@
     width: 8%;
 }
 
+.lang a:hover {
+    border-bottom: 1px solid #fc1a07;
+}
+
 .logo {
     text-align: center;
     padding-bottom: 20px;
