@@ -254,6 +254,7 @@
     box-shadow: none;
     font-size: 20px;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .about  .change input[type="button"]:hover {
