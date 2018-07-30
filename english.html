@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        
+        <title>My Japanese Name</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js">
+        </script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).on("load",function() {
+            $('.flexslider');
+            $('.flexslider').flexslider({
+                slideshowSpeed: 5000,
+            });
+            });
+        </script>
+        
+        <link rel="stylesheet" href="css/flexslider2.css">
+        <script src="js/jquery.flexslider2.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).on("load",function() {
+            $('.flexslider2');
+            $('.flexslider2').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails",
+                controlsConatiner: '.flexslider-controls',
+                manualControls: ".thumb li",
+                slideshowSpeed: 5000,
+            });
+            });
+        </script>
+        
+        <script>
+           $(function() {
+  // 「TOPに戻る」ボタンがクリックされた時の動きを指定します。
+  $(".scroll-to-top").click(function() {
+    // ページの一番上まで、アニメーション付きでスクロールさせます。
+    // アニメーションの時間は300ミリ秒で、一定の速度（linear）で動かします。
+    $('body, html').animate({scrollTop: 0}, 300, 'linear');
+  });
+
+  // 関数を変数「changeButtonState」に入れておきます。
+  var changeButtonState = function() {
+    // 「TOPに戻る」ボタンを取得します。
+    var $toTopButton = $('.scroll-to-top');
+
+    // 縦にどれだけスクロールしたかを取得します。
+    var scrollTop = $(window).scrollTop();
+
+    // ウィンドウの縦幅を取得します。
+    var windowHeight = $(window).height();
+
+    if (scrollTop >= windowHeight
+        || ($(document).height() - windowHeight) <= scrollTop) {
+      // ウィンドウの縦幅以上にスクロールしていた、
+      // またはページの下端に達していた場合、
+      // 「TOPに戻る」ボタンを表示します。
+      $toTopButton.show();
+    } else {
+      // ウィンドウの縦幅以上にスクロールしていない場合、
+      // 「TOPに戻る」ボタンを隠します。
+      $toTopButton.hide();
+    }
+  }
+
+  // ウィンドウをスクロール・ロード・リサイズしたときを契機に、
+  // 「TOPに戻る】ボタンの表示・非表示を変更します。
+  $(window).scroll(changeButtonState)
+           .load(changeButtonState)
+           .resize(changeButtonState);
+});
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <header class="header">
+            <div class="lang">
+                <a href="index.html"><img src="image/JP.jpg" alt="日本語"></a>
+                <a href="#"><img src="image/EN.jpg" alt="英語"></a>
+            </div>
+            
+            <div class="logo">
+                <img src="image/logo.png" alt="My Japanese Name">
+            </div>
+        </header>
+        
+        <div class="top-wrapper clearfix">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img class="main-image" src="image/LP1en.jpg"></li>
+                    <li><img class="main-image" src="image/LP2en.jpg"></li>
+                    <li><img class="main-image" src="image/LP3en.jpg"></li>
+                    <input type="button" value="Try to convert！">
+                </ul>
+            </div>
+        
+            <div class="side">
+                <div class="henkan">
+                    <img class="paso" src="image/henkan_off.png">
+                    <p class="paso">Convert</p>
+                </div>
+                
+                <div class="tsukuru">
+                    <img class="paso" src="image/tsukuru_.png">
+                    <p class="paso">Choose</p>
+                </div>
+                
+                <div class="tsuku">
+                    <img class="sp" src="image/tsukuru.png">
+                    <p class="sp">create</p>
+                </div>
+                
+                <div class="miru">
+                    <img class="sp" src="image/miru.png">
+                    <p class="sp">Choose</p>
+                </div>
+                
+                <img class="facebook" src="image/facebook.png">
+                <img class="twitter" src="image/tori.png">
+                <img class="insta" src="image/insta.png">
+            </div>
+            
+        </div>
+        
+        <section class="about">
+            <img class="my" src="image/My_Japanese_Name_eng.png">
+            <p>Do you know that each kanji has various meanings?</p><br>
+            <p>For example, even if the name of the same Tom is Kanji, there are many variations,</p><br>
+            <p>Each has its own meaning.</p>
+            
+            <div class="tom">
+                <div class="tom1">
+                    <img src="image/tom1.png">
+                </div>
+            
+                <div class="tom2">
+                    <img src="image/tom2.png">
+                </div>
+            </div>
+            
+            <div class="about-p">
+                <p>Choose the combination you like and use the name you made</p><br>
+                <p>Let's make original goods!!</p>
+            </div>
+            
+            <div class="change">
+                <h1>Now, convert now!</h1>
+                <p>▼</p>
+                <input type="text" placeholder="ex)Tom">
+                <input type="button" value="convert">
+            </div>
+            
+            
+        </section>
+        
+        <section class="steps">
+            <h1 class="center-title">STEPS</h1>
+            <p class="center-thumbtitle">Steps to use</p>
+            
+            <div class="pc">
+                <img src="image/illust.png">
+            </div>
+                
+            <div class="design">
+                <img src="image/step1en.png">
+                <img src="image/step2en.png">
+                <img src="image/step3en.png">
+                <a href="#"><h2>I will try making it!</h2></a>
+            </div>
+            
+            <div class="flexslider-controls">
+                <ul class="thumb">
+                    <li class="four-font">Four fonts</li>
+                    <li>Fulfilling design</li>
+                    <li class="many-item">Abundant items</li>
+                </ul>
+            </div>
+            
+            <div class="flexslider2">
+                <ul class="slides">
+                    <li><img src="image/slider1.png"><p class="slider-p">Please choose from 4 types of kanji fonts that match the image.</p>
+                    </li>
+                    <li><img src="image/slider2.png">
+                    <p class="slider-p">We prepared a wide variety of traditional Japanese festivals and sights.<br>
+                    Customize freely! Please create only one item.</p>
+                    </li>
+                    <li><img src="image/slider3.png"><p class="slider-p">We have a wide range of MADE IN JAPAN products from all over Japan.</p></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="open">
+            <h1 class="center-title">OPEN!</h1>
+            <p class="center-thumbtitle">Store open!</p>
+            <div class="popup">
+                <div class="open1">
+                    <img src="image/open1.png">
+                </div>
+                
+                <div class="open-text">
+                    <img src="image/text1en.png">
+                </div>
+                
+                <div class="popup-p">
+                    <p class="kome">For customers visiting us, we will definitely have a characteristic fan!<small>(※1)</small></p>
+                    <p>Furthermore,"Customer's name cards in wood carving" with customers' receipt of "<small>(※2)</small>get it!</p>
+                </div>
+                
+                <div class="item">
+                    <img src="image/item.png">
+                </div>
+                
+                <div class="item-p">
+                    <p><small>(※1)</small>Guests coming from overseas only</p>
+                    <p><small>(※2)</small>We will make the same kanji as the item you ordered.</p>
+                    <h1>In addition, it is also possible to actually watch the items at the store and order them!<br>Please do not hesitate to drop by.</h1>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="service">
+            <h1 class="center-title">SERVICE</h1>
+            <p class="center-thumbtitle">Service details</p>
+            
+            <div class="service-list">
+                <ul class="aaa">
+                    <li class="send">Delivery period</li>
+                    <div class="send-conf">
+                        <div class="send-message">
+                            <p>It depends on the product.</p>
+                            <p>For details, please refer to the delivery period within the product page.</p>
+                        </div>
+                    
+                        <div class="send-p">
+                            <p><small>※After completing your order, "shipping schedule date" will be displayed in my page, but the order status,order status,</small></p><p><small>&emsp;We may get time to deliver due to weather and traffic conditions.</small></p>
+                    
+                            <p><small>※After shipping products, we will send an invoice (INVOICE) by e-mail.</small></p><p><small>&emsp;Since the delivery slip number of the item is stated,<a href="https://www.post.japanpost.jp">Japan Post HP</a>please check with.</small></p>
+                        </div>
+                        
+                    </div>
+                        
+                    <li class="pay">Payment</li>
+                        <div class="pay-message">
+                            <ul>
+                                <li>Cash（※1）</li>
+                                <li>Credit card（※2）</li>
+                                <p>「VISA」「MasterCard」「JCB」「American・Express（AMEX）」</p>
+                                <li>Our shop is Japan Tax Free shop franchise store.</li>
+                            </ul>
+                        </div>
+                        <img class="tax-free" src="image/taxfree.jpg">
+                        
+                    <li class="price">Delivery charge</li>
+                        <div class="price-conf">
+                            <div class="price-message">
+                                <p>$8＋consumption tax</p>
+                                <p>Free shipping on orders over $ 90</p>
+                            </div>
+                            
+                            <div class="price-p">
+                                <small>※1&emsp;Only pop-up shop payment is possible in cash.</small>
+                                <p><small>※2&emsp;We will bear the commission for credit card payment.</small></p>
+                                <p><small>&emsp;&emsp;&nbsp;&nbsp;Please note that the closing date and the withdrawal date are different depending on the credit card company.</small></p>
+                                <p><small>&emsp;&emsp;&nbsp;&nbsp;We will treat only the credit card in the name of the customer himself.</small></p>
+                            </div>
+                        </div>
+                </ul>
+            </div>
+        </section>
+        
+         <footer>
+            <div class="teikyou">
+                <h1>Offer</h1>
+                <div class="seraku">
+                    <img src="image/seraku.jpg">
+                </div>
+            </div>        
+            <div class="kyousan">
+                <h1 class="footer-h">Sponsorship</h1>
+                <div class="tokyo-emblem">
+                    <img class="tokyo" src="image/tokyo.jpg">
+                    <img class="emblem" src="image/emblem.jpg">
+                </div>
+            </div>
+         
+            
+            <div class="contact">
+                <h1><a href="#">Inquiries</a></h1>
+            </div>
+             
+            <div class="qa">
+                <h1><a href="#">Q&amp;A</a></h1>
+            </div>
+                 
+        </footer>
+        <div class="scroll-to-top">
+            <img src="image/return.png">
+        </div>
+    </body>
+</html>
