@@ -13,74 +13,6 @@
         <link rel="stylesheet" href="css/flexslider.css">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         
-        <script src="https://code.jquery.com/jquery-3.0.0.min.js">
-        </script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script type="text/javascript" charset="utf-8">
-            $(window).on("load",function() {
-            $('.flexslider');
-            $('.flexslider').flexslider({
-                slideshowSpeed: 5000,
-            });
-            });
-        </script>
-        
-        <link rel="stylesheet" href="css/flexslider2.css">
-        <script src="js/jquery.flexslider2.js"></script>
-        <script type="text/javascript" charset="utf-8">
-            $(window).on("load",function() {
-            $('.flexslider2');
-            $('.flexslider2').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails",
-                controlsConatiner: '.flexslider-controls',
-                manualControls: ".thumb li",
-                slideshowSpeed: 5000,
-            });
-            });
-        </script>
-        
-        <script>
-           $(function() {
-  // 「TOPに戻る」ボタンがクリックされた時の動きを指定します。
-  $(".scroll-to-top").click(function() {
-    // ページの一番上まで、アニメーション付きでスクロールさせます。
-    // アニメーションの時間は300ミリ秒で、一定の速度（linear）で動かします。
-    $('body, html').animate({scrollTop: 0}, 300, 'linear');
-  });
-
-  // 関数を変数「changeButtonState」に入れておきます。
-  var changeButtonState = function() {
-    // 「TOPに戻る」ボタンを取得します。
-    var $toTopButton = $('.scroll-to-top');
-
-    // 縦にどれだけスクロールしたかを取得します。
-    var scrollTop = $(window).scrollTop();
-
-    // ウィンドウの縦幅を取得します。
-    var windowHeight = $(window).height();
-
-    if (scrollTop >= windowHeight
-        || ($(document).height() - windowHeight) <= scrollTop) {
-      // ウィンドウの縦幅以上にスクロールしていた、
-      // またはページの下端に達していた場合、
-      // 「TOPに戻る」ボタンを表示します。
-      $toTopButton.show();
-    } else {
-      // ウィンドウの縦幅以上にスクロールしていない場合、
-      // 「TOPに戻る」ボタンを隠します。
-      $toTopButton.hide();
-    }
-  }
-
-  // ウィンドウをスクロール・ロード・リサイズしたときを契機に、
-  // 「TOPに戻る】ボタンの表示・非表示を変更します。
-  $(window).scroll(changeButtonState)
-           .load(changeButtonState)
-           .resize(changeButtonState);
-});
-        </script>
-        
     </head>
     
     <body>
@@ -309,5 +241,73 @@
         <div class="scroll-to-top">
             <img src="image/return.png">
         </div>
+        
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js">
+        </script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).on("load",function() {
+            $('.flexslider');
+            $('.flexslider').flexslider({
+                slideshowSpeed: 5000,
+            });
+            });
+        </script>
+        
+        <link rel="stylesheet" href="css/flexslider2.css">
+        <script src="js/jquery.flexslider2.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).on("load",function() {
+            $('.flexslider2');
+            $('.flexslider2').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails",
+                controlsConatiner: '.flexslider-controls',
+                manualControls: ".thumb li",
+                slideshowSpeed: 5000,
+            });
+            });
+        </script>
+        
+        <script>
+           $(function() {
+  // 「TOPに戻る」ボタンがクリックされた時の動きを指定します。
+  $(".scroll-to-top").click(function() {
+    // ページの一番上まで、アニメーション付きでスクロールさせます。
+    // アニメーションの時間は300ミリ秒で、一定の速度（linear）で動かします。
+    $('body, html').animate({scrollTop: 0}, 300, 'linear');
+  });
+
+  // 関数を変数「changeButtonState」に入れておきます。
+  var changeButtonState = function() {
+    // 「TOPに戻る」ボタンを取得します。
+    var $toTopButton = $('.scroll-to-top');
+
+    // 縦にどれだけスクロールしたかを取得します。
+    var scrollTop = $(window).scrollTop();
+
+    // ウィンドウの縦幅を取得します。
+    var windowHeight = $(window).height();
+
+    if (scrollTop >= windowHeight
+        || ($(document).height() - windowHeight) <= scrollTop) {
+      // ウィンドウの縦幅以上にスクロールしていた、
+      // またはページの下端に達していた場合、
+      // 「TOPに戻る」ボタンを表示します。
+      $toTopButton.show();
+    } else {
+      // ウィンドウの縦幅以上にスクロールしていない場合、
+      // 「TOPに戻る」ボタンを隠します。
+      $toTopButton.hide();
+    }
+  }
+
+  // ウィンドウをスクロール・ロード・リサイズしたときを契機に、
+  // 「TOPに戻る】ボタンの表示・非表示を変更します。
+  $(window).scroll(changeButtonState)
+           .load(changeButtonState)
+           .resize(changeButtonState);
+});
+        </script>
     </body>
 </html>
